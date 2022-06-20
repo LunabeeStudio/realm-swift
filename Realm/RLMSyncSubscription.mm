@@ -383,11 +383,12 @@ NSUInteger RLMFastEnumerate(NSFastEnumerationState *state,
     if (name != nil) {
         auto iterator = _mutableSubscriptionSet->find([name UTF8String]);
         
-        if (updateExisting || iterator == _mutableSubscriptionSet->end()) {
+        if (iterator == _mutableSubscriptionSet->end() ||
+            (updateExisting || !(query.get_description() == iterator->query_string() && [objectClassName UTF8String] == iterator->object_class_name()))) {
             _mutableSubscriptionSet->insert_or_assign([name UTF8String], query);
         }
         else {
-            @throw RLMException(@"Cannot duplicate a subscription. If you meant to update the subscription please use the `update` method.");
+            @throw RLMException(@"Cannot duplicate a subscription, adding a subscription with the same name and query will throw. If you meant to update the subscription please use the `update` or `add` method with a new query.");
         }
     }
     else {

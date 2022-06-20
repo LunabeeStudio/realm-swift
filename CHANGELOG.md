@@ -1,11 +1,10 @@
 x.y.z Release notes (yyyy-MM-dd)
 =============================================================
 ### Enhancements
-* None.
+* Allow using `SyncSubscriptionSet.append` or `RLMSyncSubscriptionSet.add` to update a named subscription query. This will allow us to add a subscriptions with the same name more than once, only if the passed query is different.
 
 ### Fixed
-* <How to hit and notice issue? what was the impact?> ([#????](https://github.com/realm/realm-swift/issues/????), since v?.?.?)
-* None.
+* Added `initialSubscription` and `rerunOnOpen` when copying `RLMRealmConfiguration`, this was making `RLMRealmConfiguration.defaultConfiguration` to not work with this values.
 
 <!-- ### Breaking Changes - ONLY INCLUDE FOR NEW MAJOR version -->
 
