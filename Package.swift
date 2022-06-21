@@ -112,7 +112,7 @@ let package = Package(
             targets: ["Realm", "RealmSwift"]),
     ],
     dependencies: [
-        .package(name: "RealmDatabase", url: "https://github.com/aleyooop/realm-core", branch: "dp/expose_missing_symbols_to_cocoa")
+        .package(name: "RealmDatabase", url: "https://github.com/LunabeeStudio/realm-core", branch: "master")
     ],
     targets: [
       .target(
