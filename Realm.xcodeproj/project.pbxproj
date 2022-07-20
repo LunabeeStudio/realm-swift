@@ -97,6 +97,10 @@
 		29B7FDFB1C0DE8100023224E /* fileformat-pre-null.realm in Resources */ = {isa = PBXBuildFile; fileRef = 29B7FDF71C0DE76B0023224E /* fileformat-pre-null.realm */; };
 		29B7FDFC1C0DE8110023224E /* fileformat-pre-null.realm in Resources */ = {isa = PBXBuildFile; fileRef = 29B7FDF71C0DE76B0023224E /* fileformat-pre-null.realm */; };
 		29EDB8E41A7708E700458D80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8839B2D19E31FD90047B1A8 /* main.m */; };
+		375942A32887FC3F00FF4DEC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375942A22887FC3F00FF4DEC /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		375942A42887FC8D00FF4DEC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375942A22887FC3F00FF4DEC /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		375942A52887FCA400FF4DEC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375942A22887FC3F00FF4DEC /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		375942A62887FCB300FF4DEC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375942A22887FC3F00FF4DEC /* SwiftUI.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		3F08725527F3B5E0007A1175 /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F08725427F3B5E0007A1175 /* libcompression.tbd */; };
 		3F08725627F3B5EB007A1175 /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F08725427F3B5E0007A1175 /* libcompression.tbd */; };
 		3F08725727F3B87A007A1175 /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F08725427F3B5E0007A1175 /* libcompression.tbd */; };
@@ -825,6 +829,7 @@
 		29EDB8E01A77070200458D80 /* RLMRealm_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMRealm_Private.h; sourceTree = "<group>"; };
 		29EDB8E51A7710B700458D80 /* RLMResults_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMResults_Private.h; sourceTree = "<group>"; };
 		29EDB8E91A7712E500458D80 /* RLMObjectSchema_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMObjectSchema_Private.h; sourceTree = "<group>"; };
+		375942A22887FC3F00FF4DEC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		3F0338491E6F466D00F9E288 /* RLMAccessor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RLMAccessor.hpp; sourceTree = "<group>"; };
 		3F04EA2D1992BEE400C2CE2E /* PerformanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceTests.m; sourceTree = "<group>"; };
 		3F08725427F3B5E0007A1175 /* libcompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcompression.tbd; path = usr/lib/libcompression.tbd; sourceTree = SDKROOT; };
@@ -1225,6 +1230,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375942A52887FCA400FF4DEC /* SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1239,6 +1245,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375942A32887FC3F00FF4DEC /* SwiftUI.framework in Frameworks */,
 				3F98162A2317763000C3543D /* libc++.tbd in Frameworks */,
 				3F98162B2317763600C3543D /* libz.tbd in Frameworks */,
 				5D66102A1BE98DD00021E04F /* Realm.framework in Frameworks */,
@@ -1257,6 +1264,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375942A62887FCB300FF4DEC /* SwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1271,8 +1279,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8267FE31D90B79000E001C7 /* Realm.framework in Frameworks */,
+				375942A42887FC8D00FF4DEC /* SwiftUI.framework in Frameworks */,
 				1AA5AEA31D98DF1000ED8C27 /* RealmSwift.framework in Frameworks */,
+				E8267FE31D90B79000E001C7 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1300,6 +1309,7 @@
 		1A7B82361D51254600750296 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				375942A22887FC3F00FF4DEC /* SwiftUI.framework */,
 				CFAE926A24A0A7F40033CB31 /* AuthenticationServices.framework */,
 				3F9816292317763000C3543D /* libc++.tbd */,
 				3F08725427F3B5E0007A1175 /* libcompression.tbd */,
@@ -3369,10 +3379,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D659E761BE03E0D006515A0 /* Realm.xcconfig */;
 			buildSettings = {
-				OTHER_LDFLAGS = (
-					"-weak_framework",
-					"\"SwiftUI\"",
-				);
+				OTHER_LDFLAGS = "";
 			};
 			name = Debug;
 		};
@@ -3380,10 +3387,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D659E761BE03E0D006515A0 /* Realm.xcconfig */;
 			buildSettings = {
-				OTHER_LDFLAGS = (
-					"-weak_framework",
-					"\"SwiftUI\"",
-				);
+				OTHER_LDFLAGS = "";
 			};
 			name = Release;
 		};
@@ -3391,10 +3395,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D660FBD1BE98BEF0021E04F /* RealmSwift.xcconfig */;
 			buildSettings = {
-				OTHER_LDFLAGS = (
-					"-weak_framework",
-					"\"SwiftUI\"",
-				);
+				OTHER_LDFLAGS = "";
 			};
 			name = Debug;
 		};
@@ -3402,10 +3403,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D660FBD1BE98BEF0021E04F /* RealmSwift.xcconfig */;
 			buildSettings = {
-				OTHER_LDFLAGS = (
-					"-weak_framework",
-					"\"SwiftUI\"",
-				);
+				OTHER_LDFLAGS = "";
 			};
 			name = Release;
 		};
