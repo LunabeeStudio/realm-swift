@@ -3369,6 +3369,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D659E761BE03E0D006515A0 /* Realm.xcconfig */;
 			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					"\"SwiftUI\"",
+				);
 			};
 			name = Debug;
 		};
@@ -3376,6 +3380,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D659E761BE03E0D006515A0 /* Realm.xcconfig */;
 			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					"\"SwiftUI\"",
+				);
 			};
 			name = Release;
 		};
@@ -3383,6 +3391,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D660FBD1BE98BEF0021E04F /* RealmSwift.xcconfig */;
 			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					"\"SwiftUI\"",
+				);
 			};
 			name = Debug;
 		};
@@ -3390,6 +3402,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D660FBD1BE98BEF0021E04F /* RealmSwift.xcconfig */;
 			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					"\"SwiftUI\"",
+				);
 			};
 			name = Release;
 		};
